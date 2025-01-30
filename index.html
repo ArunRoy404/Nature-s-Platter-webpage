@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/cf94209d77.js" crossorigin="anonymous"></script>
@@ -34,6 +33,16 @@
         }
         .font-poppins{
             font-family: "Poppins", serif;
+        }
+        .font-adlam{
+          font-family: "ADLaM Display", serif;
+        }
+        .popular-card{
+          border-radius: 10px;
+
+          background:url("assets/images/vegetable-offer.png"), linear-gradient(136.38deg, rgb(83, 219, 58) 25.666%,rgb(255, 255, 255) 108.596%);
+          background-repeat: no-repeat;
+          background-position: bottom right;
         }
 
     </style>
@@ -148,6 +157,149 @@
           </div>
         </div>
       </section>
+
+      <!-- popular products section -->
+      <section class="py-12 lg:py-[140px] bg-secondary">
+        <div class="container mx-auto p-3">
+          <div class="">
+            <h2 class="text-primary text-2xl lg:text-4xl font-semibold mb-8 lg:mb-12">Popular Products</h2>
+          </div>
+
+          <div class="flex flex-col xl:flex-row gap-6">
+
+            <div class="popular-card w-auto xl:w-[425px] h-[400px] lg:h-auto">
+              <div class="card-body space-y-3">
+                <h2 class="card-title font-adlam text-[27px] lg:text-[32px] text-white">30% off</h2>
+                <p class="text-[13.5px] lg:text-[16px] opacity-70">Get 30% off on fresh vegetables—shop now and save big on healthy, farm-fresh produce!</p>
+                <div class="">
+                  <button class="btn bg-white px-[30px] text-font-primary-color text-[17px] lg:text-xl">Buy Now</button>
+                </div>
+                <div class="">
+                  <!-- <button class="relative -top-[170px] btn bg-white px-[30px] text-font-primary-color text-xl">Buy Now</button> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- mini cards -->
+            <div class="grid grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-6 flex-1">
+
+
+              <div class="card p-3 lg:p-4 bg-white flex flex-row ">
+                <div class="bg-secondary my-auto rounded-[10px]">
+                  <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
+                    src="assets/images/onion.png"/>
+                </div>
+                <div class=" p-0 pl-4">
+                  <p class="text-[10px] lg:text-[16px] font-normal"><i class="w-[11.25px] h-[11.25px] lg:w-[18px] lg:h-[18px] fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                  <h2 class="card-title text-[12.5px] lg:text-xl font-medium">Onion 1KG</h2>
+                  <p class="text-[10px] lg:text-[16px] font-medium">$39.99</p>
+                </div>
+              </div>
+
+              <div class="card p-3 lg:p-4 bg-white flex flex-row ">
+                <div class="bg-secondary my-auto rounded-[10px]">
+                  <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
+                    src="assets/images/tomato.png"/>
+                </div>
+                <div class=" p-0 pl-4 ">
+                  <p class="text-[10px] lg:text-[16px] font-normal"><i class="w-[11.25px] h-[11.25px] lg:w-[18px] lg:h-[18px] fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                  <h2 class="card-title text-[12.5px] lg:text-xl font-medium">Tomato 500 g</h2>
+                  <p class="text-[10px] lg:text-[16px] font-medium">$39.99</p>
+                </div>
+              </div>
+
+              <div class="card p-3 lg:p-4 bg-white flex flex-row ">
+                <div class="bg-secondary my-auto rounded-[10px]">
+                  <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
+                    src="assets/images/potato.png"/>
+                </div>
+                <div class=" p-0 pl-4 ">
+                  <p class="text-[10px] lg:text-[16px] font-normal"><i class="w-[11.25px] h-[11.25px] lg:w-[18px] lg:h-[18px] fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                  <h2 class="card-title text-[12.5px] lg:text-xl font-medium">Potato 1KG</h2>
+                  <p class="text-[10px] lg:text-[16px] font-medium">$39.99</p>
+                </div>
+              </div>
+              
+              <div class="card p-3 lg:p-4 bg-white flex flex-row ">
+                <div class="bg-secondary my-auto rounded-[10px]">
+                  <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
+                    src="assets/images/tomato.png"/>
+                </div>
+                <div class=" p-0 pl-4 ">
+                  <p class="text-[10px] lg:text-[16px] font-normal"><i class="w-[11.25px] h-[11.25px] lg:w-[18px] lg:h-[18px] fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                  <h2 class="card-title text-[12.5px] lg:text-xl font-medium">Tomato 500 g</h2>
+                  <p class="text-[10px] lg:text-[16px] font-medium">$39.99</p>
+                </div>
+              </div>
+
+              <div class="card p-3 lg:p-4 bg-white flex flex-row ">
+                <div class="bg-secondary my-auto rounded-[10px]">
+                  <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
+                    src="assets/images/onion.png"/>
+                </div>
+                <div class=" p-0 pl-4 ">
+                  <p class="text-[10px] lg:text-[16px] font-normal"><i class="w-[11.25px] h-[11.25px] lg:w-[18px] lg:h-[18px] fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                  <h2 class="card-title text-[12.5px] lg:text-xl font-medium">Onion 1KG</h2>
+                  <p class="text-[10px] lg:text-[16px] font-medium">$39.99</p>
+                </div>
+              </div>
+
+              <div class="card p-3 lg:p-4 bg-white flex flex-row ">
+                <div class="bg-secondary my-auto rounded-[10px]">
+                  <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
+                    src="assets/images/tomato.png"/>
+                </div>
+                <div class=" p-0 pl-4 ">
+                  <p class="text-[10px] lg:text-[16px] font-normal"><i class="w-[11.25px] h-[11.25px] lg:w-[18px] lg:h-[18px] fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                  <h2 class="card-title text-[12.5px] lg:text-xl font-medium">Tomato 500 g</h2>
+                  <p class="text-[10px] lg:text-[16px] font-medium">$39.99</p>
+                </div>
+              </div>
+
+              <div class="card p-3 lg:p-4 bg-white flex flex-row ">
+                <div class="bg-secondary my-auto rounded-[10px]">
+                  <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
+                    src="assets/images/onion.png"/>
+                </div>
+                <div class=" p-0 pl-4 ">
+                  <p class="text-[10px] lg:text-[16px] font-normal"><i class="w-[11.25px] h-[11.25px] lg:w-[18px] lg:h-[18px] fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                  <h2 class="card-title text-[12.5px] lg:text-xl font-medium">Onion 1KG</h2>
+                  <p class="text-[10px] lg:text-[16px] font-medium">$39.99</p>
+                </div>
+              </div>
+
+              <div class="card p-3 lg:p-4 bg-white flex flex-row ">
+                <div class="bg-secondary my-auto rounded-[10px]">
+                  <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
+                    src="assets/images/potato.png"/>
+                </div>
+                <div class=" p-0 pl-4 ">
+                  <p class="text-[10px] lg:text-[16px] font-normal"><i class="w-[11.25px] h-[11.25px] lg:w-[18px] lg:h-[18px] fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                  <h2 class="card-title text-[12.5px] lg:text-xl font-medium">Potato 1KG</h2>
+                  <p class="text-[10px] lg:text-[16px] font-medium">$39.99</p>
+                </div>
+              </div>
+
+              <div class="hidden xl:block">
+                <div class="card p-3 lg:p-4 bg-white flex flex-row ">
+                  <div class="bg-secondary my-auto rounded-[10px]">
+                    <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
+                      src="assets/images/potato.png"/>
+                  </div>
+                  <div class=" p-0 pl-4 ">
+                    <p class="text-[10px] lg:text-[16px] font-normal"><i class="w-[11.25px] h-[11.25px] lg:w-[18px] lg:h-[18px] fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                    <h2 class="card-title text-[12.5px] lg:text-xl font-medium">Potato 1KG</h2>
+                    <p class="text-[10px] lg:text-[16px] font-medium">$39.99</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </main>
     <footer></footer>
 </body>
