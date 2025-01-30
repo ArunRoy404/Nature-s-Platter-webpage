@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="https://kit.fontawesome.com/cf94209d77.js" crossorigin="anonymous"></script>
+    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'btn-color-primary': '#179800',
+                        'font-primary-color': '#111111'
                     }
 
                 }
@@ -31,11 +33,68 @@
         .font-poppins{
             font-family: "Poppins", serif;
         }
+
     </style>
 </head>
-<body class="font-sora">
-    <h1 class="">
-        Hello world!
-    </h1>
+<body class="font-sora text-font-primary-color">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+      <!-- Navbar -->
+        <div class= "p-3 lg:p-6 text-xl container mx-auto flex items-center border-[0.5px] lg:border-0  border-[#179800]">
+            <div class="lg:hidden flex-1">
+              <img class="w-12" src="assets/images/logo small.png" alt="">
+            </div>
+            <div class="flex-1 hidden lg:block">
+              <a class="">
+                <img src="assets/images/logo-header.png" alt="">
+              </a>
+            </div>
+            <div class="flex-1 hidden xl:block">
+              <ul class="menu text-xl menu-horizontal">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="hidden lg:block space-x-6  ">
+              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <a class="btn text-xl text-font-color-primary bg-white border-1 rounded-lg border-btn-color-primary px-8">Login</a>
+              <a class="text-white text-xl btn bg-btn-color-primary rounded-lg px-8">Register</a>
+            </div>
+            <div class="dropdown lg:hidden">
+                <div tabindex="0" role="button" class="">
+                    <img src="assets/images/menu small.png" alt="">
+                </div>
+                <ul
+                  tabindex="0"
+                  class="text-xl space-y-20px menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow relative -left-10">
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                  <li><a>Item 3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="mt-24">
+          <div class="hero">
+            <div class="p-0 hero-content text-center">
+              <div class="w-[1000px] space-y-9">
+                <h1 class="text-6xl font-semibold">Freshness <span class="text-[#179800]">You Can <br>
+                  Count</span> On, Prices You’ll Love!</h1>
+                <p class="text-xl opacity-80">
+                  Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!
+                </p>
+                <div>
+                  <img src="assets/images/hero-vegetables.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
