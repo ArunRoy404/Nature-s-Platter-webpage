@@ -18,6 +18,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'primary': '#179800',
+                        'secondary': '#EFEBE3',
                         'btn-color-primary': '#179800',
                         'font-primary-color': '#111111'
                     }
@@ -39,7 +41,7 @@
 <body class="font-sora text-font-primary-color">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
       <!-- Navbar -->
-        <div class= "p-3 lg:p-6 text-xl container mx-auto flex items-center border-[0.5px] lg:border-0  border-[#179800]">
+        <div class= " container p-3 lg:p-6 text-xl mx-auto flex items-center border-[0.5px] lg:border-0  border-[#179800]">
             <!-- modile logo -->
             <div class="lg:hidden flex-1">
               <img class="w-12" src="assets/images/logo small.png" alt="">
@@ -98,8 +100,55 @@
           </div>
         </section>
 
+        
     </header>
-    <main></main>
+    <main>
+      <!-- services section -->
+      <section class="py-12 lg:py-36">
+        <div class="container mx-auto p-3 ">
+          <h2 class="text-primary text-2xl lg:text-4xl font-semibold mb-8 lg:mb-12">Services</h2>
+          <div class="card-container grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
+            
+                <div class="card bg-secondary">
+                  <figure class="px-10 pt-10">
+                    <img class="p-3 bg-white rounded-full"
+                      src="assets/images/service.png"/>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title text-xl lg:text-2xl font-semibold">24/7 Services</h2>
+                    <p class="text-[16.82px] lg:text-xl font-light opacity-70">Our 24/7 services ensure fresh vegetables are always available, delivering quality produce anytime you need, day or night.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card bg-secondary">
+                  <figure class="px-10 pt-10">
+                    <img class="p-3 bg-white rounded-full"
+                      src="assets/images/delivery.png"/>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title text-xl lg:text-2xl font-semibold">Fast Delivery</h2>
+                    <p class="text-[16.82px] lg:text-xl font-light opacity-70">Get your fresh vegetables delivered quickly with our fast delivery service, ensuring freshness and quality right at your doorstep.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card bg-secondary">
+                  <figure class="px-10 pt-10">
+                    <img class="p-3 bg-white rounded-full"
+                      src="assets/images/healthy.png"/>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title text-xl lg:text-2xl font-semibold">Healthy Products</h2>
+                    <p class="text-[16.82px] lg:text-xl font-light opacity-70">We offer only the freshest and healthiest vegetables, grown naturally to ensure maximum nutrition, great taste, and a healthier lifestyle for you.
+                    </p>
+                  </div>
+                </div>
+              
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
 </body>
 </html>
