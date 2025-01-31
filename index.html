@@ -40,21 +40,11 @@
         .font-adlam{
           font-family: "ADLaM Display", serif;
         }
-        .popular-card{
-          border-radius: 10px;
-
-          background:url("assets/images/vegetable-offer.png"), linear-gradient(136.38deg, rgb(83, 219, 58) 25.666%,rgb(255, 255, 255) 108.596%);
-          background-repeat: no-repeat;
-          background-position: bottom right;
-        }
         a{
           cursor: pointer;
         }
         a:hover{
           color: black;
-        }
-        .mini-border{
-          border-color: rgba(17, 17, 17, 0.1);
         }
 
         /* floating vegetable animation  */
@@ -103,7 +93,7 @@
         }
         .popUP{
           animation: popUP 1.5s ease-out forwards;
-        }
+        } 
     </style>
 </head>
 
@@ -204,8 +194,8 @@
                 </div> 
 
                 <!-- pooping image  -->
-                <img class="absolute -z-10 -left-[100px] popUP md:hidden"  src="assets/images/bg-leaf-left.png">
-                <img class="absolute -z-10 -right-[100px] popUP md:hidden " src="assets/images/bg-leaf-right.png">
+                <img class="absolute -z-10 -left-[100px] popUP md:hidden"  src="assets/images/bg-leaf-left.png"> 
+                <img class="absolute -z-10 -right-[100px] popUP md:hidden " src="assets/images/bg-leaf-right.png"> 
               </div>
               
             </div>
@@ -282,15 +272,17 @@
           <!-- card container  -->
           <div class="flex flex-col xl:flex-row gap-6">
             <!-- popular card -->
-            <div class="popular-card w-auto xl:w-[425px] h-[400px] lg:h-auto rounded-[8.43px] lg:rounded-[10px]">
-              <div class="card-body space-y-3">
-                <h2 class="card-title font-adlam text-[27px] lg:text-[32px] text-white">30% off</h2>
-                <p class="text-[13.5px] lg:text-[16px] opacity-70">Get 30% off on fresh vegetables—shop now and save big on healthy, farm-fresh produce!</p>
-                <div class="">
-                  <button class="btn bg-white px-[30px] text-font-primary-color text-[17px] lg:text-xl">Buy Now</button>
-                </div>
-                <div class="">
-                  <!-- <button class="relative -top-[170px] btn bg-white px-[30px] text-font-primary-color text-xl">Buy Now</button> -->
+            <div class="pw-auto rounded-[8.43px] lg:rounded-[10px] bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF]">
+              <div class="xl:w-[425px] h-[402px] md:h-[100%] bg-no-repeat bg-[url('assets/images/vegetable-offer.png')] bg-right-bottom">
+                <div class="card-body space-y-3">
+                  <h2 class="card-title font-adlam text-[27px] lg:text-[32px] text-white">30% off</h2>
+                  <p class="text-[13.5px] lg:text-[16px] opacity-70">Get 30% off on fresh vegetables—shop now and save big on healthy, farm-fresh produce!</p>
+                  <div class="">
+                    <button class="btn bg-white px-[30px] text-font-primary-color text-[17px] lg:text-xl">Buy Now</button>
+                  </div>
+                  <div class="">
+                    <!-- <button class="relative -top-[170px] btn bg-white px-[30px] text-font-primary-color text-xl">Buy Now</button> -->
+                  </div>
                 </div>
               </div>
             </div>
@@ -298,7 +290,7 @@
             <div class="grid grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-6 flex-1">
 
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/onion.png"/>
@@ -310,7 +302,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/tomato.png"/>
@@ -322,7 +314,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/potato.png"/>
@@ -334,7 +326,7 @@
                 </div>
               </div>
               
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/tomato.png"/>
@@ -346,7 +338,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/onion.png"/>
@@ -358,7 +350,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/tomato.png"/>
@@ -370,7 +362,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/onion.png"/>
@@ -382,7 +374,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/potato.png"/>
@@ -395,7 +387,7 @@
               </div>
 
               <div class="hidden xl:block">
-                <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
+                <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                   <div class="p-2 bg-secondary my-auto rounded-[10px]">
                     <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                       src="assets/images/potato.png"/>
