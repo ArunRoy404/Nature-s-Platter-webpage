@@ -88,7 +88,22 @@
         }
         .img-shadow {
           filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
-        }  
+        }
+
+        /* popup animation*/
+        @keyframes popUP {
+          0%{
+            transform: translateY(0px);
+            opacity: 0;
+          }
+          100%{
+            transform: translateY(-80px);
+            opacity: 1;
+          }
+        }
+        .popUP{
+          animation: popUP 1.5s ease-out forwards;
+        }
     </style>
 </head>
 
@@ -143,7 +158,7 @@
         <!-- Hero Section -->
         <section class="mt-12 lg:mt-24 ">
           <div class="hero">
-            <div class="p-0 hero-content text-center">
+            <div class="p-0 hero-content text-center ">
               <div class="space-y-4 lg:space-y-9 overflow-hidden relative">
                 <h1 class="px-7 text-3xl  lg:text-6xl font-semibold">Freshness <span class="text-[#179800]">You Can <br>
                   Count</span> On, Prices You’ll Love!</h1>
@@ -153,6 +168,7 @@
                 <div>
                   <img src="assets/images/hero-vegetables.png" alt="">
                 </div>
+
 
 
                 <!-- Floating Vegetables -->
@@ -186,12 +202,17 @@
                 <div class=" absolute top-[700px] right-[100px] animate-floating">
                     <img src="assets/images/lemon.png"  class="w-16 h-16 img-shadow">
                 </div> 
-                
+
+                <!-- pooping image  -->
+                <img class="absolute -z-10 -left-[100px] popUP md:hidden"  src="assets/images/bg-leaf-left.png">
+                <img class="absolute -z-10 -right-[100px] popUP md:hidden " src="assets/images/bg-leaf-right.png">
               </div>
+              
             </div>
           </div>
         </section>
 
+        
         
     </header>
     <main class="">
