@@ -11,6 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/cf94209d77.js" crossorigin="anonymous"></script>
     
+    <!-- config script -->
     <script>
         tailwind.config = {
             theme: {
@@ -27,6 +28,8 @@
             }
         }
     </script>
+
+    <!-- style -->
     <style>
         .font-sora{
             font-family: "Sora", serif;
@@ -50,17 +53,26 @@
         a:hover{
           color: black;
         }
+        .mini-border{
+          border-color: rgba(17, 17, 17, 0.1);
+        }
+ 
     </style>
 </head>
+
 <body class="font-sora text-font-primary-color">
+    
+
+    <!-- header -->
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+      
       <!-- Navbar -->
         <div class= " container p-3 lg:p-6 mx-auto text-xl  flex items-center border-[0.5px] lg:border-0  border-[#179800]">
             <!-- modile logo -->
             <div class="lg:hidden flex-1">
               <img class="w-12" src="assets/images/logo small.png" alt="">
             </div>
-            <!-- lg logo -->
+            <!-- learge logo -->
             <div class="flex-1 hidden lg:block">
               <a class="">
                 <img src="assets/images/logo-header.png" alt="">
@@ -103,7 +115,7 @@
               <div class="space-y-4 lg:space-y-9">
                 <h1 class="text-3xl  lg:text-6xl font-semibold">Freshness <span class="text-[#179800]">You Can <br>
                   Count</span> On, Prices You’ll Love!</h1>
-                <p class="text-[16px] font-light lg:text-xl opacity-80">
+                <p class="text-[16px] font-light lg:font-normal lg:text-xl opacity-80">
                   Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!
                 </p>
                 <div>
@@ -119,13 +131,15 @@
     <main class="">
       <!-- services section -->
       <section class="py-12 lg:py-36">
+        <!-- container  -->
         <div class="container mx-auto p-3 lg:p-0 ">
           <h2 class="text-primary text-2xl lg:text-4xl font-semibold mb-8 lg:mb-12">Services</h2>
           <div class="card-container grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
-            
-                <div class="card bg-secondary">
+
+                <!-- card 1 -->
+                <div class="card bg-secondary rounded-[13.45px] lg:rounded-2xl">
                   <figure class="px-10 pt-10">
-                    <img class="p-3 bg-white rounded-full"
+                    <img class="p-3 bg-white rounded-full" 
                       src="assets/images/service.png"/>
                   </figure>
                   <div class="card-body items-center text-center">
@@ -135,7 +149,8 @@
                   </div>
                 </div>
 
-                <div class="card bg-secondary">
+                <!-- card 2 -->
+                <div class="card bg-secondary rounded-[13.45px] lg:rounded-2xl">
                   <figure class="px-10 pt-10">
                     <img class="p-3 bg-white rounded-full"
                       src="assets/images/delivery.png"/>
@@ -147,7 +162,8 @@
                   </div>
                 </div>
 
-                <div class="card bg-secondary">
+                <!-- card 3 -->
+                <div class="card bg-secondary card bg-secondary rounded-[13.45px] lg:rounded-2xl">
                   <figure class="px-10 pt-10">
                     <img class="p-3 bg-white rounded-full"
                       src="assets/images/healthy.png"/>
@@ -163,16 +179,20 @@
         </div>
       </section>
 
+
+
       <!-- popular products section -->
       <section class="py-12 lg:py-[140px] bg-secondary">
+        <!-- container -->
         <div class="container mx-auto p-3 lg:p-0">
           <div class="">
             <h2 class="text-primary text-2xl lg:text-4xl font-semibold mb-8 lg:mb-12">Popular Products</h2>
           </div>
 
+          <!-- card container  -->
           <div class="flex flex-col xl:flex-row gap-6">
             <!-- popular card -->
-            <div class="popular-card w-auto xl:w-[425px] h-[400px] lg:h-auto">
+            <div class="popular-card w-auto xl:w-[425px] h-[400px] lg:h-auto rounded-[8.43px] lg:rounded-[10px]">
               <div class="card-body space-y-3">
                 <h2 class="card-title font-adlam text-[27px] lg:text-[32px] text-white">30% off</h2>
                 <p class="text-[13.5px] lg:text-[16px] opacity-70">Get 30% off on fresh vegetables—shop now and save big on healthy, farm-fresh produce!</p>
@@ -184,12 +204,11 @@
                 </div>
               </div>
             </div>
-
             <!-- mini cards -->
             <div class="grid grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-6 flex-1">
 
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row ">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/onion.png"/>
@@ -201,7 +220,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row ">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/tomato.png"/>
@@ -213,7 +232,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row ">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/potato.png"/>
@@ -225,7 +244,7 @@
                 </div>
               </div>
               
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row ">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/tomato.png"/>
@@ -237,7 +256,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row ">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/onion.png"/>
@@ -249,7 +268,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row ">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/tomato.png"/>
@@ -261,7 +280,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row ">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/onion.png"/>
@@ -273,7 +292,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row ">
+              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/potato.png"/>
@@ -286,7 +305,7 @@
               </div>
 
               <div class="hidden xl:block">
-                <div class="card p-[10px] lg:p-4 bg-white flex flex-row ">
+                <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] mini-border">
                   <div class="p-2 bg-secondary my-auto rounded-[10px]">
                     <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                       src="assets/images/potato.png"/>
@@ -300,9 +319,12 @@
               </div>
 
             </div>
+
           </div>
         </div>
       </section>
+
+
 
       <!-- Food Recipe Section -->
       <section class="py-12 lg:py-[140px] ">
@@ -420,6 +442,7 @@
       </section>
 
 
+
       <!-- arrival and offers -->
       <section class=" pt-12 pb-72 lg:pt-[140px] lg:pb-[390px]">
 
@@ -432,6 +455,7 @@
           <div class=" "></div>
               <div class="flex flex-col lg:flex-row gap-5">
 
+                <!-- content-1  -->
                 <div class="lg:w-[60%] bg-[#115414] p-5 md:p-8 xl:p-10 rounded-xl lg:rounded-3xl flex justify-between items-center font-poppins text-white">
                   <!-- logo and button -->
                   <div class="space-y-4">
@@ -443,6 +467,7 @@
                   <div class="w-[30%]"><img src="assets/images/dawat-mock-up.png" alt=""></div>
               </div>
 
+              <!-- content-2  -->
               <div class="flex-1 bg-[#102861] p-5 md:p-8 xl:p-10 rounded-xl lg:rounded-3xl flex justify-between items-center font-poppins text-white">
                   <!-- logo and button -->
                   <div class="space-y-4">
@@ -459,18 +484,20 @@
         </div>
       </section>
 
+
+
       <!-- news -->
       <section>
         <div class="relative container mx-auto px-3 lg:p-0" >
-          <div class="w-[calc(100%-25px)] lg:w-full -top-[250px] absolute text-center items-center lg:text-left flex flex-col lg:flex-row justify-between p-8 lg:py-14 lg:px-[100px]  bg-secondary rounded-3xl">
+          <div class="w-[calc(100%-25px)] lg:w-full -top-[250px] absolute text-center items-center lg:text-left flex flex-col lg:flex-row justify-between p-8 lg:py-14 lg:px-[100px]  bg-secondary rounded-2xl lg:rounded-3xl">
             <div class="w-[232px] lg:w-auto"><img src="assets/images/vegetable-busket.png" alt=""></div>
             <div class="lg:w-[536px]">
               <form action="">
                 <h2 class="text-primary lg:text-[#111111] mt-6 mb-3 lg:mb-[22px] text-xl font-bold lg:text-4xl lg:font-semibold">Get Grocery News</h2>
-                <p class="lg:text-xl font-normal">Subscribe now for the latest grocery updates, special deals, and fresh produce tips straight to your inbox!</p>
-                <input class="rounded-md text-xs lg:rounded-[8px] my-[15px] lg:my-10 w-[80%] p-2 lg:p-[18px]" type="email" name="" placeholder="Enter email..." id="">
+                <p class="text-[16px] lg:text-xl font-normal">Subscribe now for the latest grocery updates, special deals, and fresh produce tips straight to your inbox!</p>
+                <input class="rounded-md text-[14px] lg:text-[16px] font-normal lg:rounded-[8px] my-[15px] lg:my-10 w-[80%] p-2 lg:p-[18px]" type="email" name="" placeholder="Enter email..." id="">
                 <br>
-                <button class="btn bg-primary lg:px-8 text-white lg:text-xl"><input type="submit" value="Subscribe"></button>
+                <button class="btn bg-primary lg:px-8 text-white text-[14px] lg:text-xl"><input type="submit" value="Subscribe"></button>
               </form>
             </div>
           </div>
@@ -479,11 +506,9 @@
 
         
       </section>
-
-
-
-
     </main>
+
+
     <footer>
       <!-- footer -->
         <section class="bg-primary pt-72 pb-12 lg:pb-[140px] lg:pt-[390px]">
@@ -493,14 +518,14 @@
               <div><img src="assets/images/logo-footer.png" alt=""></div>
               <p class="md:w-[425px] opacity-70 text-[16px] lg:text-xl font-normal">Freshness delivered to your doorstep! Shop with Nature’s Platter for the best quality vegetables, fast delivery, and unbeatable freshness every day.</p>
             </nav>
-            <nav class="text-[16px] lg:text-xl flex flex-col justify-between gap-5 lg:gap-12">
+            <nav class="text-[16px] lg:text-xl font-normal flex flex-col justify-between gap-5 lg:gap-12">
               <a class="flex-grow-1 Product">Product</a>
               <a class="flex-grow-1 Services">Services</a>
               <a class="flex-grow-1 Contact us">Contact us</a>
             </nav>
             <nav class=" lg:self-end">
               <h6 class="font-normal text-[14px] lg:text-[16px] lg:font-medium ">Follow us</h6>
-              <div class="grid grid-flow-col gap-4">
+              <div class="grid grid-flow-col gap-8">
                 <a><i class="text-2xl fa-brands fa-facebook"></i></a>
                 <a><i class="text-2xl fa-brands fa-instagram"></i></a>
                 <a><i class="text-2xl fa-brands fa-linkedin"></i></a>
@@ -511,5 +536,7 @@
 
         </section>
     </footer>
+
+
 </body>
 </html>
