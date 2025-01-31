@@ -44,13 +44,12 @@
           background-repeat: no-repeat;
           background-position: bottom right;
         }
-
     </style>
 </head>
 <body class="font-sora text-font-primary-color">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
       <!-- Navbar -->
-        <div class= " container p-3 lg:p-6 text-xl mx-auto flex items-center border-[0.5px] lg:border-0  border-[#179800]">
+        <div class= " container p-3 lg:p-6 mx-auto text-xl  flex items-center border-[0.5px] lg:border-0  border-[#179800]">
             <!-- modile logo -->
             <div class="lg:hidden flex-1">
               <img class="w-12" src="assets/images/logo small.png" alt="">
@@ -111,10 +110,10 @@
 
         
     </header>
-    <main>
+    <main class="">
       <!-- services section -->
       <section class="py-12 lg:py-36">
-        <div class="container mx-auto p-3 ">
+        <div class="container mx-auto p-3 lg:p-0 ">
           <h2 class="text-primary text-2xl lg:text-4xl font-semibold mb-8 lg:mb-12">Services</h2>
           <div class="card-container grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
             
@@ -160,7 +159,7 @@
 
       <!-- popular products section -->
       <section class="py-12 lg:py-[140px] bg-secondary">
-        <div class="container mx-auto p-3">
+        <div class="container mx-auto p-3 lg:p-0">
           <div class="">
             <h2 class="text-primary text-2xl lg:text-4xl font-semibold mb-8 lg:mb-12">Popular Products</h2>
           </div>
@@ -300,91 +299,92 @@
       </section>
 
       <!-- arrival and offers -->
-      <section class="lg:pt-[140px] lg:pb-[390px]">
+      <section class=" pt-12 pb-72 lg:pt-[140px] lg:pb-[390px]">
 
-        <div class="container mx-auto p-3">
+        <div class="container mx-auto p-3 lg:p-0">
           <div class="">
             <h2 class="text-primary text-2xl lg:text-4xl font-semibold mb-8 lg:mb-12">Arrival & Offers</h2>
           </div>
 
           <!-- container -->
-          <div class=""></div>
-
+          <div class=" "></div>
               <div class="flex flex-col lg:flex-row gap-5">
 
                 <div class="lg:w-[60%] bg-[#115414] p-5 md:p-8 xl:p-10 rounded-xl lg:rounded-3xl flex justify-between items-center font-poppins text-white">
                   <!-- logo and button -->
                   <div class="space-y-4">
                       <div class="w-28 lg:w-auto"><img src="assets/images/dawat-logo.png" alt=""></div>
-                      <button class=" lg:px-[33px] xl:text-3xl btn bg-[#63B76D] border-0 text-white">Cook Exotic Dishes</button>
-                      <h2 class="lg:text-[40px]">UP to <span class="font-bold">20% OFF</span></h2>
+                      <button class="lg:px-[33px] xl:text-3xl btn bg-[#63B76D] border-0 text-white">Cook Exotic Dishes</button>
+                      <h2 class="text-xl lg:text-[40px]">UP to <span class="font-bold">20% OFF</span></h2>
                   </div>
                   <!-- img -->
                   <div class="w-[30%]"><img src="assets/images/dawat-mock-up.png" alt=""></div>
               </div>
 
-              <div class="bg-[#102861] p-5 md:p-8 xl:p-10 rounded-xl lg:rounded-3xl flex justify-between items-center font-poppins text-white">
+              <div class="flex-1 bg-[#102861] p-5 md:p-8 xl:p-10 rounded-xl lg:rounded-3xl flex justify-between items-center font-poppins text-white">
                   <!-- logo and button -->
                   <div class="space-y-4">
                       <div class="w-12 lg:w-auto"><img src="assets/images/india-gate-logo.png" alt=""></div>
-                      <button class=" lg:px-[10px] xl:text-3xl btn bg-[#2A4D97] border-0 text-white">Cook Exotic Dishes</button>
-                      <h2 class="lg:text-[40px]">UP to <span class="font-bold">20% OFF</span></h2>
+                      <button class="lg:px-[10px] xl:text-3xl btn bg-[#2A4D97] border-0 text-white">Cook Exotic Dishes</button>
+                      <h2 class="text-xl lg:text-[40px]">UP to <span class="font-bold">20% OFF</span></h2>
                   </div>
                   <!-- img -->
                   <div class="w-[30%]"><img src="assets/images/india-gate-mock-up.png" alt=""></div>
               </div>
-
           </div>
 
-
-          
-
-
-          <!-- <div class="flex flex-col lg:flex-row gap-5"> -->
-
-            <!-- <div class="lg:w-[60%] bg-[rgb(17,84,20)] rounded-3xl flex justify-between py-5 lg:py-8 lg:px-4 items-center">
-              <div class="p-3 lg:card-body space-y-4 lg:space-y-7">
-                <div class="w-[150px]">
-                  <img src="assets/images/dawat-logo.png" alt="">
-                </div>
-                <div class="">
-                  <button class="text-white text-xs lg:text-[23.27px] btn border-0 rounded-md lg:rounded-xl font-poppins bg-[#63B76D] px-4 lg:px-[33px] ">Cook Exotic Dishes</button>
-                </div>
-                
-                <h2 class="text-[22px] lg:text-[40px] text-white ">UP to <span class="font-bold">20% OFF</span></h2>
-              </div>
-              <div class="w-[150px]">
-                <img src="assets/images/dawat-mock-up.png" alt="">
-              </div>
-            </div>
-
-            <div class="h-[190px] bg-[#102861] rounded-3xl flex justify-between py-3 lg:py-8 lg:px-4 items-center">
-              <div class="p-5 lg:card-body space-y-2 lg:space-y-7">
-                <div class="w-[64px] ">
-                  <img src="assets/images/india-gate-logo.png" alt="">
-                </div>
-                <div class="">
-                  <button class="text-white text-xs lg:text-[23.27px] btn border-0 rounded-md lg:rounded-xl font-poppins bg-[#2A4D97] px-4 lg:px-[33px] ">World's No.1 Rice</button>
-                </div>
-                
-                <h2 class="text-[22px] lg:text-[40px] text-white ">UP to <span class="font-bold">40% OFF</span></h2>
-              </div>
-              <div class="w-[100px]">
-                <img src="assets/images/india-gate-mock-up.png" alt="">
-              </div>
-            </div> -->
-
-
-
-          </div>
-
-          
-
-
+        
         </div>
       </section>
 
+      <!-- news -->
+      <section>
+        <div class="relative container mx-auto px-3 lg:p-0" >
+          <div class="w-[calc(100%-25px)] lg:w-full -top-[250px] absolute text-center items-center lg:text-left flex flex-col lg:flex-row justify-between p-8 lg:py-14 lg:px-[100px]  bg-secondary rounded-3xl">
+            <div class="w-[232px] lg:w-auto"><img src="assets/images/vegetable-busket.png" alt=""></div>
+            <div class="lg:w-[536px]">
+              <form action="">
+                <h2 class="text-primary lg:text-[#111111] mt-6 mb-3 lg:mb-[22px] text-xl font-bold lg:text-4xl lg:font-semibold">Get Grocery News</h2>
+                <p class="lg:text-xl font-normal">Subscribe now for the latest grocery updates, special deals, and fresh produce tips straight to your inbox!</p>
+                <input class="rounded-md text-xs lg:rounded-[8px] my-[15px] lg:my-10 w-[80%] p-2 lg:p-[18px]" type="email" name="" placeholder="Enter email..." id="">
+                <br>
+                <button class="btn bg-primary lg:px-8 text-white lg:text-xl"><input type="submit" value="Subscribe"></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+
+        
+      </section>
+
     </main>
-    <footer></footer>
+    <footer>
+      <!-- footer -->
+        <section class="bg-primary pt-72 pb-12 lg:pb-[140px] lg:pt-[390px]">
+
+          <footer class="container p-3 lg:p-0 mx-auto footer text-white flex flex-col  lg:flex-row lg:justify-between">
+            <nav>
+              <div><img src="assets/images/logo-footer.png" alt=""></div>
+              <p class="md:w-[425px] opacity-70 text-[16px] lg:text-xl font-normal">Freshness delivered to your doorstep! Shop with Nature’s Platter for the best quality vegetables, fast delivery, and unbeatable freshness every day.</p>
+            </nav>
+            <nav class="text-[16px] lg:text-xl flex flex-col justify-between gap-5 lg:gap-12">
+              <a class="flex-grow-1 Product">Product</a>
+              <a class="flex-grow-1 Services">Services</a>
+              <a class="flex-grow-1 Contact us">Contact us</a>
+            </nav>
+            <nav class=" lg:self-end">
+              <h6 class="font-normal text-[14px] lg:text-[16px] lg:font-medium ">Follow us</h6>
+              <div class="grid grid-flow-col gap-4">
+                <a><i class="text-2xl fa-brands fa-facebook"></i></a>
+                <a><i class="text-2xl fa-brands fa-instagram"></i></a>
+                <a><i class="text-2xl fa-brands fa-linkedin"></i></a>
+                <a><i class="text-2xl fa-brands fa-youtube"></i></a>
+              </div>
+            </nav>
+          </footer>
+
+        </section>
+    </footer>
 </body>
 </html>
