@@ -56,6 +56,8 @@
         .mini-border{
           border-color: rgba(17, 17, 17, 0.1);
         }
+
+        /* floating vegetable animation  */
         @keyframes float {
           0%{
             transform: translateY(0px);
@@ -86,7 +88,7 @@
         }
         .img-shadow {
           filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
-        }
+        }  
     </style>
 </head>
 
@@ -139,10 +141,10 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="mt-12 lg:mt-24">
+        <section class="mt-12 lg:mt-24 ">
           <div class="hero">
             <div class="p-0 hero-content text-center">
-              <div class="space-y-4 lg:space-y-9">
+              <div class="space-y-4 lg:space-y-9 overflow-hidden relative">
                 <h1 class="px-7 text-3xl  lg:text-6xl font-semibold">Freshness <span class="text-[#179800]">You Can <br>
                   Count</span> On, Prices You’ll Love!</h1>
                 <p class="px-5 text-[16px] font-light lg:font-normal lg:text-xl opacity-80">
@@ -151,38 +153,39 @@
                 <div>
                   <img src="assets/images/hero-vegetables.png" alt="">
                 </div>
-                <!-- Floating Vegetables -->
-                
-                  
-                  <div class="hidden md:block absolute bottom-[450px] lg:bottom-[400px] left-[700px] animate-floating ">
-                    <img src="assets/images/tomato.png"  class="w-16 h-16 img-shadow">
-                  </div>
-                  <div class="absolute bottom-[250px] left-[80px] lg:left-[500px] animate-floating-reverse ">
-                      <img src="assets/images/onion.png"  class="w-16 h-16 img-shadow">
-                  </div>
-                  
-                  <div class="hidden md:block absolute bottom-10 left-50 animate-floating">
-                    <img src="assets/images/leaf.png"  class="img-shadow">
-                  </div>
-                  <div class=" hidden lg:block absolute -bottom-[300px]  lg:-bottom-[250px] lg:left-[600px] animate-floating-reverse ">
-                    <img src="assets/images/potato.png"  class="w-16 h-16 img-shadow">
-                  </div>
 
-                  
-                  
-                  
-                  <div class="absolute bottom-[300px] right-[100px] lg:right-[750px] animate-floating-reverse ">
-                      <img src="assets/images/tomato.png" class="w-16 h-16 img-shadow">
-                  </div>
-                  <div class="absolute bottom-[150px] lg:bottom-[200px] right-[80px] lg:right-[600px] animate-floating ">
-                    <img src="assets/images/leaf.png"  class="w-16 h-16 img-shadow">
-                  </div>
-                  <div class="md:block absolute bottom-[150px] right-[210px] lg:bottom-[0px] lg:right-[500px] animate-floating-reverse ">
+
+                <!-- Floating Vegetables -->
+                <div class="absolute top-[250px] left-[120px] animate-floating-reverse ">
+                  <img src="assets/images/tomato.png" class="w-16 h-16 img-shadow">
+                </div>
+                <div class="absolute top-[200px] right-[100px] animate-floating ">
+                  <img src="assets/images/potato.png"  class="w-16 h-16 img-shadow">
+                </div>
+
+
+                <div class="absolute top-[400px] left-[70px] animate-floating ">
+                      <img src="assets/images/onion.png"  class="w-16 h-16 img-shadow">
+                </div>
+                <div class="absolute top-[400px] right-[50px] animate-floating-reverse">
+                    <img src="assets/images/leaf.png"  class="img-shadow">
+                </div>
+
+
+                <div class="absolute top-[500px] left-[40px] animate-floating-reverse ">
+                    <img src="assets/images/potato.png"  class="w-16 h-16 img-shadow">
+                </div>
+                <div class="absolute top-[550px] right-[80px] animate-floating ">
                     <img src="assets/images/small cabagge.png"  class="w-16 h-16 img-shadow">
-                  </div>
-                  <div class=" hidden lg:block absolute -bottom-[250px] right-[600px] animate-floating">
+                </div>
+
+
+                <div class=" absolute top-[700px] left-[100px] animate-floating-reverse ">
+                    <img src="assets/images/leaf.png"  class="w-16 h-16 img-shadow">
+                </div>
+                <div class=" absolute top-[700px] right-[100px] animate-floating">
                     <img src="assets/images/lemon.png"  class="w-16 h-16 img-shadow">
-                  </div>
+                </div> 
                 
               </div>
             </div>
