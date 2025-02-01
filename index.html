@@ -17,6 +17,11 @@
         tailwind.config = {
             theme: {
                 extend: {
+                  fontFamily: {
+                        sora: ["Sora", "serif"],
+                        poppins: ["Poppins", "serif"],
+                        adlam: ["ADLaM Display", "serif"],
+                    },
                     colors: {
                         clifford: '#da373d',
                         'primary': '#179800',
@@ -32,15 +37,6 @@
 
     <!-- style -->
     <style>
-        .font-sora{
-            font-family: "Sora", serif;
-        }
-        .font-poppins{
-            font-family: "Poppins", serif;
-        }
-        .font-adlam{
-          font-family: "ADLaM Display", serif;
-        }
         a{
           cursor: pointer;
         }
@@ -94,7 +90,7 @@
         }
         .popUP{
           animation: popUP 1.5s ease-out forwards;
-        } 
+        }
     </style>
 </head>
 
@@ -138,10 +134,10 @@
                 </div>
                 <ul
                   tabindex="0"
-                  class="text-xl space-y-20px menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow relative -left-10">
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 2</a></li>
-                  <li><a>Item 3</a></li>
+                  class="text-xl space-y-20px menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 p-2 shadow relative right-0">
+                  <li><a>Fresh Vegetables</a></li>
+                  <li><a>Subscription</a></li>
+                  <li><a>Cart</a></li>
                 </ul>
             </div>
         </div>
@@ -187,16 +183,17 @@
                 </div>
 
 
-                <div class=" absolute top-[700px] left-[100px] animate-floating-reverse ">
+                <div class=" absolute top-[700px] left-[100px] animate-floating">
                     <img src="assets/images/leaf.png"  class="w-16 h-16 img-shadow">
                 </div>
-                <div class=" absolute top-[700px] right-[100px] animate-floating">
+                <div class=" absolute top-[700px] right-[100px] animate-floating-reverse">
                     <img src="assets/images/lemon.png"  class="w-16 h-16 img-shadow">
                 </div> 
 
-                <!-- pooping image  -->
+                <!-- image popUP -->
                 <img class="absolute -z-10 -left-[100px] popUP md:hidden"  src="assets/images/bg-leaf-left.png"> 
-                <img class="absolute -z-10 -right-[100px] popUP md:hidden " src="assets/images/bg-leaf-right.png"> 
+                <img class="absolute -z-10 -right-[100px] popUP md:hidden " src="assets/images/bg-leaf-right.png">
+                
               </div>
               
             </div>
@@ -220,7 +217,7 @@
                 <!-- card 1 -->
                 <div class="card bg-secondary rounded-[13.45px] lg:rounded-2xl">
                   <figure class="px-10 pt-10">
-                    <img class="p-3 bg-white rounded-full" 
+                    <img class="p-6 bg-white rounded-full overflow-visible" 
                       src="assets/images/service.png"/>
                   </figure>
                   <div class="card-body items-center text-center">
@@ -233,7 +230,7 @@
                 <!-- card 2 -->
                 <div class="card bg-secondary rounded-[13.45px] lg:rounded-2xl">
                   <figure class="px-10 pt-10">
-                    <img class="p-3 bg-white rounded-full"
+                    <img class="p-6 bg-white rounded-full overflow-visible"
                       src="assets/images/delivery.png"/>
                   </figure>
                   <div class="card-body items-center text-center">
@@ -246,7 +243,7 @@
                 <!-- card 3 -->
                 <div class="card bg-secondary card bg-secondary rounded-[13.45px] lg:rounded-2xl">
                   <figure class="px-10 pt-10">
-                    <img class="p-3 bg-white rounded-full"
+                    <img class="p-6 bg-white rounded-full overflow-visible"
                       src="assets/images/healthy.png"/>
                   </figure>
                   <div class="card-body items-center text-center">
@@ -291,7 +288,7 @@
             <div class="grid grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-6 flex-1">
 
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
+              <div class="hover:cursor-pointer hover:bg-gray-100 card p-[10px] pr-[6.25px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/onion.png"/>
@@ -303,7 +300,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
+              <div class="hover:cursor-pointer hover:bg-gray-100 card p-[10px] pr-[6.25px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/tomato.png"/>
@@ -315,7 +312,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
+              <div class="hover:cursor-pointer hover:bg-gray-100 card p-[10px] pr-[6.25px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/potato.png"/>
@@ -327,7 +324,7 @@
                 </div>
               </div>
               
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
+              <div class="hover:cursor-pointer hover:bg-gray-100 card p-[10px] pr-[6.25px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/tomato.png"/>
@@ -339,7 +336,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
+              <div class="hover:cursor-pointer hover:bg-gray-100 card p-[10px] pr-[6.25px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/onion.png"/>
@@ -351,7 +348,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
+              <div class="hover:cursor-pointer hover:bg-gray-100 card p-[10px] pr-[6.25px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/tomato.png"/>
@@ -363,7 +360,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
+              <div class="hover:cursor-pointer hover:bg-gray-100 card p-[10px] pr-[6.25px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/onion.png"/>
@@ -375,7 +372,7 @@
                 </div>
               </div>
 
-              <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
+              <div class="hover:cursor-pointer hover:bg-gray-100 card p-[10px] pr-[6.25px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                 <div class="p-2 bg-secondary my-auto rounded-[10px]">
                   <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                     src="assets/images/potato.png"/>
@@ -388,7 +385,7 @@
               </div>
 
               <div class="hidden xl:block">
-                <div class="card p-[10px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
+                <div class="hover:cursor-pointer hover:bg-gray-100 card p-[10px] pr-[6.25px] lg:p-4 bg-white flex flex-row lg:rounded-[10px] border-[0.63px] lg:border-[1px] border-[#1111111A]">
                   <div class="p-2 bg-secondary my-auto rounded-[10px]">
                     <img class="lg:w-[70px] lg:h-[70px] w-10 h-10"
                       src="assets/images/potato.png"/>
@@ -543,7 +540,7 @@
                   <!-- logo and button -->
                   <div class="space-y-4">
                       <div class="w-28 lg:w-auto"><img src="assets/images/dawat-logo.png" alt=""></div>
-                      <button class="lg:px-[33px] xl:text-3xl btn bg-[#63B76D] border-0 text-white">Cook Exotic Dishes</button>
+                      <button class="hover:text-black lg:px-[33px] xl:text-3xl btn bg-[#63B76D] border-0 text-white">Cook Exotic Dishes</button>
                       <h2 class="text-xl lg:text-[40px]">UP to <span class="font-bold">20% OFF</span></h2>
                   </div>
                   <!-- img -->
@@ -555,7 +552,7 @@
                   <!-- logo and button -->
                   <div class="space-y-4">
                       <div class="w-12 lg:w-auto"><img src="assets/images/india-gate-logo.png" alt=""></div>
-                      <button class="lg:px-[10px] xl:text-3xl btn bg-[#2A4D97] border-0 text-white">Cook Exotic Dishes</button>
+                      <button class="hover:text-black lg:px-[10px] xl:text-3xl btn bg-[#2A4D97] border-0 text-white">Cook Exotic Dishes</button>
                       <h2 class="text-xl lg:text-[40px]">UP to <span class="font-bold">20% OFF</span></h2>
                   </div>
                   <!-- img -->
@@ -580,7 +577,7 @@
                 <p class="text-[16px] lg:text-xl font-normal">Subscribe now for the latest grocery updates, special deals, and fresh produce tips straight to your inbox!</p>
                 <input class="rounded-md text-[14px] lg:text-[16px] font-normal lg:rounded-[8px] my-[15px] lg:my-10 w-[80%] p-2 lg:p-[18px]" type="email" name="" placeholder="Enter email..." id="">
                 <br>
-                <button class="btn bg-primary lg:px-8 text-white text-[14px] lg:text-xl"><input type="submit" value="Subscribe"></button>
+                <button class="hover:text-black btn bg-primary lg:px-8 text-white text-[14px] lg:text-xl"><input type="submit" value="Subscribe"></button>
               </form>
             </div>
           </div>
